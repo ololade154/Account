@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  font-family: poppins;
+}
+:root {
+  --btn: #3a5b22;
+  --bg: #c0c2c9;
+  --border: #d9d9d9;
+  --sign: #0f3dde;
+}
+.sign_in_with_google,
+.sign_in_with_apple {
+  border: 1px solid #e3e5e7;
+  padding: 1rem 0.5rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.sign_in_with_google img,
+.sign_in_with_apple img {
+  width: 15px;
+  height: 15px;
+}
+.sign_in_with_google a,
+.sign_in_with_apple a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: black;
+}
+
+@media screen and (min-width: 100px) and (max-width: 770px) {
+  .sign_background img {
+    display: none !important;
+  }
+  .Sign_up_text {
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+  .sign_up_heading h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .sign_up_input label {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .sign_up_input input {
+    display: block;
+    border: solid var(--bg) 0.02rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 0.9rem;
+  }
+  .sign_up_input input:focus {
+    outline: 1px solid var(--btn);
+  }
+  .sign_up_checkbox a {
+    color: black;
+  }
+  .sign_up_btn button {
+    width: 100%;
+    border-radius: 0.9rem;
+    background-color: var(--btn);
+    padding: 0.3rem;
+  }
+  .sign_up_btn a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+  }
+  p {
+    text-align: center;
+    margin: auto;
+    position: relative;
+  }
+  p::before {
+    content: " ";
+    width: 170px;
+    height: 1px;
+    display: block;
+    background-color: var(--bg);
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+  p::after {
+    content: " ";
+    width: 170px;
+    height: 1px;
+    display: block;
+    background-color: var(--bg);
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+  .sign_up_icon {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .sign_in_with_google,
+  .sign_in_with_apple {
+    border: 2px solid #e3e5e7;
+    padding: 0.7rem 0.5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    width: 250px;
+    margin: 0 auto;
+  }
+  .footer_text h3 {
+    text-align: center;
+  }
+  .footer_text a {
+    color: var(--sign);
+  }
+}
+@media screen and (min-width: 770px) {
+  .Sign_up_screen {
+    display: flex;
+  }
+  .sign_background img {
+    max-width: 100%;
+  }
+  .Sign_up_text {
+    display: flex;
+    width: 30vw;
+    margin: 10rem auto;
+    flex-direction: column;
+    align-items: left;
+    padding: 1rem 0;
+    gap: 1rem;
+    /* border: 2px solid red; */
+  }
+  .sign_up_heading h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  .sign_up_input label {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .sign_up_input input {
+    display: block;
+    border: solid var(--bg) 0.01rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 0.9rem;
+  }
+  .sign_up_checkbox a {
+    color: black;
+  }
+  .sign_up_btn button {
+    width: 100%;
+    border-radius: 0.9rem;
+    background-color: var(--btn);
+    padding: 0.4rem;
+  }
+  .sign_up_btn a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+  }
+  p {
+    text-align: center;
+    margin: 2.5rem auto;
+    position: relative;
+  }
+  p::before {
+    content: " ";
+    width: 170px;
+    height: 1px;
+    display: block;
+    background-color: var(--bg);
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+  p::after {
+    content: " ";
+    width: 170px;
+    height: 1px;
+    display: block;
+    background-color: var(--bg);
+    position: absolute;
+    right: 0;
+    top: 50%;
+  }
+  .sign_up_icon {
+    display: flex;
+    gap: 2rem;
+  }
+  .sign_in_with_google,
+  .sign_in_with_apple {
+    border: 1px solid #e3e5e7;
+    padding: 0.5rem 1.4rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  .footer_text h3 {
+    text-align: center;
+  }
+  .footer_text a {
+    color: var(--sign);
+  }
+}

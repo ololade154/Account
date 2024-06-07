@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: poppins;
+}
+:root {
+  --btn: #3a5b22;
+  --sign: #0366ff;
+  --bg: #c0c2c9;
+  --bg-deep: #45555c;
+  --white: #ffffff;
+  --off-white: #f7f7f7;
+}
+
+.google_icon a,
+.apple_icon a {
+  color: black;
+}
+
+@media screen and (min-width: 200px) and (max-width: 770px) {
+  .welcome_image img {
+    display: none;
+  }
+  .Welcome_page {
+    margin: 0.5rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+  }
+  .welcome_text {
+    margin-bottom: 2rem;
+  }
+  .welcome_text h3 {
+    font-size: 40px;
+    font-weight: 900;
+  }
+  .welcome_text p {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .input_text label {
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .input_text input {
+    display: block;
+    border: solid var(--bg) 0.02rem;
+    padding: 0.7rem 1rem;
+    width: 100%;
+    border-radius: 0.9rem;
+  }
+  .text {
+    display: flex;
+    gap: 7rem;
+  }
+  .text p {
+    color: var(--sign);
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .input_checkbox label {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .input_btn button {
+    width: 100%;
+    background-color: var(--btn);
+    padding: 0.7rem 1rem;
+    border-radius: 0.9rem;
+  }
+  .input_btn a {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .divider {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .divider p {
+    margin: auto;
+    position: relative;
+    text-align: center;
+  }
+  .divider p::before {
+    content: " ";
+    display: block;
+    height: 1px;
+    width: 155px;
+    background-color: var(--bg);
+    position: absolute;
+    left: 0;
+    top: 50%;
+  }
+  .divider p::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: 155px;
+    background-color: var(--bg);
+    right: 0;
+    top: 50%;
+  }
+  .icon {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .google_icon img,
+  .apple_icon img {
+    width: 17px;
+    height: 15px;
+  }
+  .google_icon,
+  .apple_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid #e3e5e7;
+    padding: 0.7rem 0.5rem;
+    border-radius: 40px;
+  }
+  .google_icon a,
+  .apple_icon a {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .footer_text h3 {
+    text-align: center;
+    font-size: 16px;
+  }
+  .footer_text a {
+    font-size: 16px;
+    color: var(--sign);
+  }
+}
+@media screen and (min-width: 770px) {
+  .Welcome_Login_page {
+    display: flex;
+  }
+  .welcome_image {
+    max-width: 100%;
+  }
+  .Welcome_page {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 10rem auto;
+    padding: 1rem 0;
+    width: 30vw;
+    gap: 1.7rem;
+  }
+  .welcome_text {
+    margin-bottom: 2.5rem;
+  }
+  .welcome_text h3 {
+    font-size: 30px;
+    font-weight: 900;
+  }
+  .welcome_text p {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .input_text input {
+    display: block;
+    border: solid var(--bg) 0.02rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    border-radius: 0.9rem;
+  }
+  .input_text label {
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .text {
+    display: flex;
+    gap: 13.9rem;
+  }
+  .text p {
+    color: var(--sign);
+    font-size: 11px;
+    font-weight: bold;
+  }
+  .input_checkbox label {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .input_btn button {
+    width: 100%;
+    background-color: var(--btn);
+    padding: 0.5rem 1rem;
+    border-radius: 0.9rem;
+  }
+  .input_btn a {
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .divider {
+    margin-top: 0.3rem;
+    margin-bottom: 2.7rem;
+  }
+  .divider p {
+    position: relative;
+    margin: auto;
+    text-align: center;
+  }
+  .divider p::before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    background-color: var(--bg);
+    width: 180px;
+  }
+  .divider p::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 1px;
+    background-color: var(--bg);
+    width: 180px;
+  }
+  .google_icon img,
+  .apple_icon img {
+    width: 18px;
+    height: 17px;
+  }
+  .google_icon,
+  .apple_icon {
+    border: 1px solid #e3e5e7;
+    padding: 0.5rem 2.2rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  .google_icon a,
+  .apple_icon a {
+    font-size: 9px;
+    font-weight: 700;
+  }
+  .icon {
+    display: flex;
+    gap: 2rem;
+  }
+  .footer_text {
+    text-align: center;
+    font-size: 13px;
+  }
+  .footer_text a {
+    font-size: 13px;
+    color: var(--sign);
+  }
+}
